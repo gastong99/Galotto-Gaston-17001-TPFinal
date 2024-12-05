@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>GG Originals</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="imagenes" href="imagenes/logoMarca.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo-container">
+                <img src="imagenes/logoMarca.jpg" class="logoMarca" alt="Logo">
+            </a>
+        </header>
+
+        <h1 >MODIFICANDO PRODUCTO</h1>
+
+        <div class="cuerpo-mod-div-contenedor">
+            <div class="cuerpo-mod-div">
+                <div>
+                    <input type="text" class="input-mod" id="id" placeholder="Id">
+                </div>
+                <div>
+                   <input type="text" class="input-mod" id="titulo" placeholder="Titulo">
+                </div>
+                <div>
+                    <input type="text" class="input-mod" id="precioPeso" placeholder="Precio (ARS)">
+                </div>
+                <div>
+                    <input type="text" class="input-mod" id="precioDolar" placeholder="Precio (USD)">
+                </div>
+               <div>
+                    <input type="date" class="input-mod" id="fecha" name="fecha" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="btnModificar-div">
+            <button onclick="ModificarProducto()" class="btnMod">Guardar Modificacion</button>
+        </div>
+
+        <div class="btn-volver">
+            <button onclick="window.location.href='modificarListado.html'" class="btn-volver-index">Volver</button>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-section">
+                <h3 class="footer-title">CONTACTANOS</h3>
+                <div class="footer-item">
+                    <img src="imagenes/logoWA.jpg" class="logo" alt="WhatsApp">
+                    <p class="text">3564-520614</p>
+                </div>
+                <div class="footer-item">
+                    <a href="https://www.instagram.com/gastongalotto_/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="imagenes/logoIG.jpg" class="logo" alt="Instagram">
+                        <p class="text">Instagram</p>
+                    </a>
+                </div>
+                <div class="footer-item">
+                    <a href="https://www.facebook.com/gastong14/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="imagenes/logoFB.jpg" class="logo" alt="Facebook">
+                        <p class="text">Facebook</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">DIRECCION</h3>
+                <div class="footer-item">
+                    <a href="https://maps.app.goo.gl/phvzw8qbm3e8nGW18" class="footer-link" target="_blank" rel="noopener noreferrer">
+                        <img src="imagenes/logoUbi.jpg" class="logo" alt="Ubicación">
+                        <p class="text">Lunes a Viernes</p>
+                        <p class="text">  8 a 12 hs  </p>
+                        <p class="text">  16 a 20 hs  </p>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="funciones.js"></script>
+</html>
