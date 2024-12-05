@@ -3,8 +3,6 @@ window.addEventListener('load', () => {
     CargarAPIPantalla();
 });
 
-var elementosEliminados = [];
-
 function CargarAPIConsola() {
     fetch('https://api.yumserver.com/17001/products')
         .then(response => response.json())
