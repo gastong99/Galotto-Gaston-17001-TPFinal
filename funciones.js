@@ -24,6 +24,10 @@ function AgregarProducto() {
             if (data === "OK") { 
                 alert('Producto agregado con exito');
                 actualizarListado();
+                document.getElementById('titulo').value = "";
+                document.getElementById('precioPeso').value = "";
+                document.getElementById('precioDolar').value = "";
+                document.getElementById('fecha').value = "";
             } else {
                 alert('Error: ' + data);
             }
